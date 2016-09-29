@@ -13,6 +13,9 @@
       function sayGoodbye(){
         document.getElementById("goodbye").innerHTML = "See ya!";
       }
+      function sayBye() {
+        document.getElementById("bye").innerHTML = "Have a good one!";
+      }
     </script>
   </head>
   <body>
@@ -20,13 +23,13 @@
       <button type="button" class="btn btn-default" onclick="sayHello();">
         Sign in
       </button>
-      <button type="button" class="btn btn-default">
+      <button type="button" class="btn btn-default" onclick="sayBye();">
         Sign out
       </button>
       <div class="alert alert-success" role="alert" id="hello">
         &nbsp;
       </div>
-      <div class="alert alert-danger" role="alert" id="goodbye">
+      <div class="alert alert-danger" role="alert" id="bye">
         &nbsp;
       </div>
     </div>
